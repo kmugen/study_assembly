@@ -1,7 +1,7 @@
 bits 64
 
 section .data
-		msg db "Hello, World!"			; name(msg), unit(byte), 상수값(string literal)
+		msg db "Hello, World!"		; name(msg), unit(byte), 상수값(string literal)
 		
 section .text
 		global _main
