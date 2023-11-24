@@ -1,6 +1,4 @@
 bits 64
-			default		rel
-			
 			global		_main
 			extern		_printf
 			extern		_scanf
@@ -10,6 +8,7 @@ _main:
         push    rbp
         mov     rbp, rsp
         sub     rsp, 16
+        
         mov		rdi, fmt_1
        	lea     rsi, [rbp-4]
         lea     rdx, [rbp-8]
@@ -18,7 +17,8 @@ _main:
         
 		mov		rax, 0
         mov		eax, [rbp-4]
-        add		eax, [rbp-8]
+        sub		eax, [rbp-8]
+        
         mov		rdi, fmt_2
         mov		rsi, rax
         call	_printf
