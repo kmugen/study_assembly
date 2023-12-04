@@ -93,7 +93,7 @@ LBB0_9:
 	ldur	w9, [x29, #-12]
 	subs	w8, w8, w9
 	cset	w8, ge
-	tbnz	w8, #0, LBB0_11
+	tbnz	w8, #0, LBB
 	b	LBB0_10
 LBB0_10:
 	ldur	w8, [x29, #-12]
